@@ -1,0 +1,36 @@
+# Dataset Information
+
+## Source
+**DS Salaries Dataset**  
+- Kaggle: https://www.kaggle.com/datasets/ashifaikram/ds-salaries  
+- File: `ds_salaries.csv`  
+- Shape: 607 rows × 12 columns  
+- Years covered: 2020, 2021, 2022
+
+## Why data file is not included
+The dataset is publicly available on Kaggle and is accessed directly  
+via the Kaggle Datasets API in the notebook. Download it from the link  
+above and place it as:
+
+```
+data/ds_salaries.csv
+```
+
+Or on Kaggle, add it as a dataset source — the notebook handles the path automatically.
+
+## Columns Used
+
+| Column | Type | Values |
+|---|---|---|
+| experience_level | Categorical | EN, MI, SE, EX |
+| employment_type | Categorical | FT, PT, CT, FL |
+| company_size | Categorical | S, M, L |
+| job_title | Categorical | 50+ titles |
+| remote_ratio | Numerical | 0, 50, 100 |
+| work_year | Numerical | 2020, 2021, 2022 |
+| salary_in_usd | Target | 2,859 – 600,000 |
+
+## Preprocessing Applied
+- Outlier removal: 5th–95th percentile on `salary_in_usd`
+- Derived feature: `years_since_start = work_year - 2020`
+- After cleaning: 547 rows

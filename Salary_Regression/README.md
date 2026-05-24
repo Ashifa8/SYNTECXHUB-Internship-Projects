@@ -15,7 +15,7 @@ salary-regression/
 ├── src/
 │   └── predict.py                  ← Inference script (load model & predict)
 │
-├── models/                         ← Saved after running notebook
+├── Models/                         ← Saved after running notebook
 │   ├── best_model.pkl              ← Trained LinearRegression model
 │   ├── scaler.pkl                  ← StandardScaler
 │   └── label_encoders.pkl          ← LabelEncoders for categorical features

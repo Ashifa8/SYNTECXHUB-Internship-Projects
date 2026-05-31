@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files (auto-downloaded)
+data/SMSSpamCollection
+data/sms.zip
+data/readme
+*.zip
+
+# Trained model artifacts
+models/spam_pipeline.pkl
+models/model_meta.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
